@@ -54,4 +54,42 @@ if (tipoDeSuscripcion == 'Free') {
 
 > 💡 Bonus: si ya eres una experta o experto en el lenguaje, te desafío a comentar cómo replicar este comportamiento con arrays y un solo condicional. 😏
 
+```js
+// cambiar por un solo if
+let typeSuscripción = [
+    "Free",
+    "Basic", 
+    "Expert", 
+    "ExpertPlus"
+    ];
+    let infoSuscripción = [
+    "solo puedes tomar los cursos gratis", 
+    "puedes tomar casi todos los cursos de Platzi durante un mes", 
+    "puedes tomar casi todos los cursos de Platzi durante un año", 
+    "tú y alguien más pueden tomar TODOS los cursos de Platzi durante un año"];
+    let userSuscription = "Expert";
+    for (let i=0; i < typeSuscripción.length; i++) {
+      if (userSuscription == typeSuscripción[i]) {
+          console.log(`Si estas suscrito al plan ${typeSuscripción[i]} en el cual ${infoSuscripción[i]}`)
+      }
+    }
 
+```
+
+```js
+const tiposDeSuscripciones = {
+    free: 'Solo puedes tomar los cursos gratis',
+    basic: 'Puedes tomar casi todos los cursos de Platzi durante un mes',
+    expert: 'Puedes tomar casi todos los cursos de Platzi durante un año',
+    expertduo: 'Tú y alguien más pueden tomar TODOS los cursos de Platzi durante un año',
+};
+
+function conseguirTipoSuscripcion(suscripcion) {
+    if (tiposDeSuscripciones[suscripcion]) {
+        console.log(tiposDeSuscripciones[suscripcion]);
+        return;
+    }
+
+    console.warn('Ese tipo de suscripción no existe')
+}
+```

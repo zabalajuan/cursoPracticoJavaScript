@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipulación del DOm Basico</title>
+
+</head>
+<body>
+    <!-- <h1 pantalla = "platzilg">Manipulación del DOM básica</h1> -->
+    <h1 >Manipulación del DOM básica</h1>
+
+    <input id="calculo1" type="text" placeholder="Escribe algo aquí" value="2">
+    <input onchange="console.log('cambio el input 2')" id="calculo2" type="text" placeholder="Escribe algo aquí" value="3">
+
+    <!-- <button id="btnCalcular" onclick="console.log('clic en el boton')">Calcular</button> -->
+    <button id="btnCalcular" onclick="btnOnClick()">Calcular</button>
+
+    <p id="result"></p>
+
+    <script src="/002-manipulacion-DOM/002-main.js"></script>
+</body>
+</html>
