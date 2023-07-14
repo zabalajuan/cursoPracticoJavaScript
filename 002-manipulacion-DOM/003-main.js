@@ -1,8 +1,14 @@
 const h1 = document.querySelector('h1');
 const input1 = document.querySelector('#calculo1');
 const input2 = document.querySelector('#calculo2');
-const btn = document.querySelector('btnCalcular');
+const btn = document.querySelector('#btnCalcular');
 const pResult = document.querySelector('#result')
+
+//Tiene dos parametros
+//Parametro 1: el evento que queremos escuchar
+//Parametro 2: El código a ejecutar
+// no es necesario poner el parentesis del metodo en el parametro 2
+btn.addEventListener('click', sumarInputValues);
 
 function sumarInputValues(){
     console.log('clic en el boton');
